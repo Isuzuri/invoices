@@ -1,0 +1,22 @@
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+
+    background-image: url('../../..//icons/arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.active {
+    transition: 0.2s;
+    transform: rotate(180deg);
+}

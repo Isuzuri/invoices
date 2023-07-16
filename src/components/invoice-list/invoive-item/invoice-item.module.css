@@ -1,0 +1,89 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1rem 1.5rem;
+
+    border-radius: 10px;
+
+    background-color: var(--blue-black);
+}
+
+.item > div {
+    width: 20%;
+}
+
+.item > div:last-child {
+    width: 2.75rem;
+}
+
+.id span {
+    color: var(--light-gray);
+}
+
+.itemList {
+    text-align: center;
+}
+/* Status Icon */
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.8rem 1.3rem;
+
+    border-radius: 10px;
+}
+
+.openInvoice {
+    height: 2rem;
+    
+    background-image: url('../../../icons/arrow-right.svg');
+    background-size: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    border-radius: 50%;
+    transition: background-color 0.1s;
+    cursor: pointer;
+}
+
+.openInvoice:hover {
+    background-color: var(--white-gray-transparent);
+}
+/* Circle before text */
+.status > div {
+    width: 0.5rem;
+    height: 0.5rem;
+
+    margin-right: 0.5rem;
+
+    border-radius: 50%;
+}
+/* Draft */
+.Draft {
+    background-color: var(--white-gray-transparent);
+}
+
+.Draft > div {
+    background-color: var(--white-gray);
+}
+/* Pending */
+.Pending {
+    background-color: var(--orange-transparent);
+}
+
+.Pending > div {
+    background-color: var(--orange);
+}
+/* Paid */
+.Paid {
+    background-color: var(--green-transparent);
+}
+
+.Paid > div {
+    background-color: var(--green);
+}
