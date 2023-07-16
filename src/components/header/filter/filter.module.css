@@ -1,6 +1,8 @@
 .filter {
     display: flex;
     align-items: center;
+    
+    cursor: pointer;
 }
 
 .arrow {
@@ -16,7 +18,7 @@
     transition: 0.2s;
 }
 
-.active {
+.active > .arrow {
     transition: 0.2s;
     transform: rotate(180deg);
 }

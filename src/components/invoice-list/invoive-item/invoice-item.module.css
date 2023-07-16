@@ -6,9 +6,17 @@
 
     padding: 1rem 1.5rem;
 
+    border: 2px solid transparent;
     border-radius: 10px;
 
     background-color: var(--blue-black);
+
+    transition: border 0.15s;
+    cursor: pointer;
+}
+
+.item:hover {
+    border-color: var(--purple);
 }
 
 .item > div {
@@ -45,14 +53,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-
-    border-radius: 50%;
-    transition: background-color 0.1s;
-    cursor: pointer;
-}
-
-.openInvoice:hover {
-    background-color: var(--white-gray-transparent);
 }
 /* Circle before text */
 .status > div {
