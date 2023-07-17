@@ -8,7 +8,7 @@ function Filter() {
     };
     
     return (
-        <div className={"head-S" + " " + styles.filter + " " + (isActive ? styles.active : '')} onClick={handleClick} >
+        <div className={"head-S " + styles.filter + " " + (isActive ? styles.active : '')} onClick={handleClick} >
             Filter by status
             <div className={styles.arrow}></div>
         </div>

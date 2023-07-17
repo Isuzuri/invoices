@@ -1,12 +1,8 @@
-import Header from "./components/header/header";
-import InvoiceList from "./components/invoice-list/invoice-list";
+import Router from "./Router";
 
 function App() {
     return (
-        <div>
-            <Header />
-            <InvoiceList />
-        </div>
+        <Router />
     );
 }
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {InvoiceService} from "../../services/invoice.service";
-import InvoiceItem from "./invoive-item/invoice-item";
+import InvoiceItem from "./invoice-item/invoice-item";
 import styles from "./invoice-list.module.css";
 
 function InvoiceList() {
