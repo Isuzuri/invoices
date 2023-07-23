@@ -1,18 +1,19 @@
 import styles from './invoice-item.module.css';
 import InvoiceStatus from '../invoice-status/status';
 import InvoiceId from './invoice-id';
+import { Link } from 'react-router-dom';
 
 function InvoiceItem({invoice}) {
     
     return (
-        <div className={styles.item}>
+        <Link to={`/invoice/${invoice.id}`} className={styles.item}>
             <InvoiceId id={invoice.id}/>
             <div>{invoice.issueDate}</div>
             <div>{invoice.billTo.clientName}</div>
             <div className={'head-S ' + styles.itemList}>{totalPrice(invoice.itemList)}</div>
             <InvoiceStatus className={invoice.status} />
             <div className={styles.openInvoice}></div>
-        </div>
+        </Link>
     )
 }
 

@@ -11,8 +11,10 @@
 
     background-color: var(--blue-black);
 
+    text-decoration: none;
     transition: border 0.15s;
     cursor: pointer;
+    color: white;
 }
 
 .item:hover {

@@ -19,4 +19,27 @@
     border: none;
     outline: none;
     cursor: pointer;
+    text-decoration: none;
+    transition: margin 0.15s;
+}
+
+.back:hover {
+    margin-left: 0.5rem;
+}
+
+.back::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+
+    margin-right: 0.5rem;
+
+    background-image: url(../../../icons/arrow-right.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform: rotate(180deg);
+    cursor: pointer;
 }
