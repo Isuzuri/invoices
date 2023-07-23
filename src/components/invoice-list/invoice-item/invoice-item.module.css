@@ -27,10 +27,6 @@
     width: 2.75rem;
 }
 
-.id span {
-    color: var(--light-gray);
-}
-
 .itemList {
     text-align: center;
 }

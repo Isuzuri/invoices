@@ -1,11 +1,12 @@
 import styles from './invoice-item.module.css';
 import InvoiceStatus from '../invoice-status/status';
+import InvoiceId from './invoice-id';
 
 function InvoiceItem({invoice}) {
     
     return (
         <div className={styles.item}>
-            <div className={'head-S ' + styles.id}><span>#</span>{invoice.id}</div>
+            <InvoiceId id={invoice.id}/>
             <div>{invoice.issueDate}</div>
             <div>{invoice.billTo.clientName}</div>
             <div className={'head-S ' + styles.itemList}>{totalPrice(invoice.itemList)}</div>

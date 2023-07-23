@@ -1,6 +1,6 @@
 import styles from "./interact.module.css";
-import InvoiceStatus from "../../invoice-list/invoice-status/status";
-import Button from "../../../ui/button/Button";
+import Button from "../../../../ui/button/Button"
+import InvoiceStatus from "../../../invoice-list/invoice-status/status";
 
 function Interact({ invoice }) {
     return (

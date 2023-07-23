@@ -1,0 +1,66 @@
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: calc(60% - 6rem);
+
+    margin: 1.5rem auto;
+
+    background-color: var(--blue-black);
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+.mainInfo > div {
+    display: flex;
+}
+
+.heading {
+    justify-content: space-between;
+}
+
+.info > div {
+    width: 33%;
+}
+
+.itemList {
+    background-color: var(--dark-blue);
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    justify-content: space-between;
+
+    border-collapse: collapse;
+}
+
+table th {
+    font-size: 1rem;
+    padding: 1rem 0 0 0;
+}
+
+table td {
+    padding: 0.5rem 1rem;
+}
+
+table tbody {
+    text-align: center;
+}
+
+table tbody td:first-child {
+    text-align: left;
+}
+
+table tbody tr:last-child {
+    background-color: var(--black);
+    font-size: 1.2em;
+}
+
+/* Move in global styles */
+h3 {
+    font-weight: 400;
+}

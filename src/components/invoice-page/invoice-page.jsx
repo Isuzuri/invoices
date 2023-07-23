@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { InvoiceService } from "../../services/invoice.service";
-import styles from "./invoice-page.module.css";
-import Interact from "./interact/interact";
-
+import InvoiceHeader from "./header/header";
+import MainInfo from "./main-info/main-info";
 function InvoicePage() {
     const { id } = useParams()
     const [ invoice, setInvoice ] = useState({})
@@ -15,10 +14,9 @@ function InvoicePage() {
     }, [id])
 
     return (
-        <div className={styles.invoice}>
-            <button className={"head-M " + styles.back}>Go Back</button>
-            <Interact invoice={invoice}/>
-            <div className="info"></div>
+        <div>
+            <InvoiceHeader invoice={invoice}/>
+            <MainInfo invoice={invoice}/>
         </div>
     )
 }
