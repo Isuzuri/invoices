@@ -8,40 +8,11 @@
 
     margin: 1.5rem auto;
 }
-
-.back {
-    align-self: flex-start;
-}
-
-.invoiceInteract {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 1rem 1.5rem;
-
-    background-color: var(--blue-black);
-    border-radius: 10px;
-}
-
-.invoiceInteract > div {
-    height: 2.5rem;
-}
-
-.status {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-}
-
-.btns {
-    display: flex;
-    gap: 1rem;
-}
-
 /* Elements Markup */
 
 .back {
+    align-self: flex-start;
+
     background-color: transparent;
 
     color: var(--white);
