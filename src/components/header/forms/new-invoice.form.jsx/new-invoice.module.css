@@ -1,0 +1,71 @@
+.newInvoiceForm {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 35%;
+    height: calc(100vh - 8rem);
+
+    padding: 4rem 2rem;
+
+    background-color: var(--form-black);
+}
+
+.CPC {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.CPC > div {
+    width: 33%;
+}
+
+.terms {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.terms > div {
+    width: 50%;
+}
+
+.itemList {
+    text-align: center;
+}
+
+.itemList Button {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.deleteItem {
+    width: 1rem;
+    height: 1rem;
+
+    padding: 0;
+
+    background-image: url('../../../../icons/delete.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.75rem 0.75rem;
+
+
+    cursor: pointer;
+    transition: background-image 0.15s;
+}
+
+.deleteItem:hover {
+    background-image: url('../../../../icons/delete-red.svg');;
+}
+
+input {
+    width: 100%;
+}

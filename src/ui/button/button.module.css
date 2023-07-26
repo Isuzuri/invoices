@@ -60,6 +60,16 @@
     background-color: var(--red-transparent);
 }
 
+/* Add Item */
+.addItem {
+    background-color: var(--green);
+    color: var(--dark-blue);
+}
+
+.addItem:hover {
+    background-color: var(--light-white);
+}
+
 /* Default */
 .default {
     background-color: var(--dark-blue);

@@ -34,12 +34,12 @@ function MainInfo({invoice}) {
 
                 <div>
                     <h3>Bill To</h3>
-                    {billTo}
+                    <div>{billTo}</div>
                 </div>
                 
                 <div>
                     <h3>Sent To</h3>
-                    <div>{invoice.billTo && invoice.billTo.clientEmail}</div>
+                    <div className='head-S'>{invoice.billTo && invoice.billTo.clientEmail}</div>
                 </div>
             </div>
 
