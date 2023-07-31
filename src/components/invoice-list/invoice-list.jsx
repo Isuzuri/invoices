@@ -8,7 +8,7 @@ function InvoiceList() {
 
     useEffect(() => {
         setInvoiceList(InvoiceService.getAllInvoices());
-    }, [])
+    })
     
     return (
         <div className={styles.list}>

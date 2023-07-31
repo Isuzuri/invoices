@@ -42,15 +42,6 @@
     color: var(--dark-blue);
 }
 
-/* Save as Draft */
-.saveAsDraft {
-    background-color: var(--light-black);
-}
-
-.saveAsDraft:hover {
-    background-color: var(--blue-black);
-}
-
 /* Delete */
 .delete {
     background-color: var(--red);
@@ -68,6 +59,18 @@
 
 .addItem:hover {
     background-color: var(--light-white);
+}
+
+/* Discard */
+
+.discard {
+    background-color: var(--white);
+    color: var(--light-gray);
+}
+
+.discard:hover {
+    background-color: var(--red-transparent);
+    color: var(--black);
 }
 
 /* Default */
